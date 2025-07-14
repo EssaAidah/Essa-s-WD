@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Driver's License</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Essa's Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="license-template">
-    <div class="license-header">
-      <h2>Driver's License</h2>
-      <hr />
+
+  <h1>Essa's Store</h1>
+  <div class="container">
+    <div class="store">
+      <h2>Store Inventory</h2>
+      <ul id="storeList"></ul>
     </div>
-    <div class="license-body">
-      <div class="photo-box">
-        <img class="photo" src="Max.jpeg" alt="Driver Photo">
-      </div>
-      <div class="details-grid">
-        <div class="left-column">
-          <div><strong>Name:</strong> Max</div>
-          <div><strong>DOB:</strong> 05-30-3023</div>
-          <div><strong>Height:</strong> 9 inches</div>
-          <div><strong>Eye Color:</strong> Golden</div>
-        </div>
-        <div class="right-column">
-          <div><strong>Date Issued:</strong> 07-3025</div>
-          <div><strong>Date Expires:</strong> 07-3030</div>
-        </div>
-      </div>
-    </div>
-    <div class="license-footer">
-      <div><strong>ID #:</strong> 123456789</div>
-      <div><strong>State:</strong> CA</div>
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cartList"></ul>
+      <button onclick="checkout()">Checkout</button>
+      <p><strong>Total:</strong> $<span id="total">0.00</span></p>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
